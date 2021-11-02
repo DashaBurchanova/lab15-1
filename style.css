@@ -1,0 +1,56 @@
+body {
+    background-color: #aeebd9;
+    font-size: 32px;
+}
+
+.text1 {
+    letter-spacing: 9px;
+}
+
+.text2 {
+    word-spacing: 20px;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.pills {
+  margin-left: 0;
+  list-style: none;
+  counter-reset: li;
+  font-family: calibri;
+}
+.pills li {
+  padding: 10px 0;
+  position: relative;
+  left: 1.5em;
+  margin-bottom: 0.75em;
+  padding-left: 1em;
+  background: #E3DEDC;
+    width: 500px;
+}
+.pills li:before {
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1.5em;
+  width: 1.875em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: #D66786;
+  border-bottom-left-radius: 70em;
+  border-top-left-radius: 70em;
+  counter-increment: li;
+  content: counter(li);
+}
